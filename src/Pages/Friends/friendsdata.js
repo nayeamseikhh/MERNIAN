@@ -12,36 +12,47 @@ import image11 from "../../assets/friendImage/doggy-8683291_1280.jpg";
 
 export const friendsData = [
   {
+    name: "Azmir uddin alif",
     image: image01,
   },
   {
+    name: "Mosaraf Hossain",
     image: image02,
   },
   {
+    name: "Aklima Kajal",
     image: image03,
   },
   {
+    name: "Nayeam seikh",
     image: image04,
   },
   {
+    name: "Jakaria ahmed",
     image: image05,
   },
   {
+    name: "Shawon ahmed",
     image: image06,
   },
   {
+    name: "Munshafa khatun",
     image: image07,
   },
   {
+    name: "jhilik mampi",
     image: image08,
   },
   {
+    name: "Al furkan",
     image: image09,
   },
   {
+    name: "Jahir uddin",
     image: image10,
   },
   {
+    name: "tajkia tio",
     image: image11,
   },
 ];

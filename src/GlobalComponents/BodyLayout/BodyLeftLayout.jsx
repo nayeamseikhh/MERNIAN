@@ -1,6 +1,8 @@
 import bgImg02 from "../../assets/backgroundImage/bgimg02.jpg";
 import bgImg from "../../assets/backgroundImage/bg-img.jpg";
 import { Link } from "react-router";
+import { CgProfile } from "react-icons/cg";
+import { SlPeople } from "react-icons/sl";
 import {
   FaLayerGroup,
   FaNewspaper,
@@ -62,23 +64,31 @@ const BodyLeftLayout = () => {
               </p>
             </div>
           </div>
+
+          {/* Page Part */}
           <div className="mt-14">
             <div className="flex items-center justify-start gap-x-6  w-[85%] py-4 px-5 hover:bg-green01 mx-auto rounded-lg transition-all ease-linear duration-100 group">
               <FaNewspaper
                 className="text-black02 group-hover:text-white transition-all ease-linear duration-100"
                 size={22}
               />
-              <Link className="text-black02 group-hover:text-white transition-all ease-linear duration-100">
+              <Link
+                to="/"
+                className="text-black02 group-hover:text-white transition-all ease-linear duration-100"
+              >
                 Newsfeed
               </Link>
             </div>
             <div className="flex items-center justify-start gap-x-6  w-[85%] py-4 px-5 hover:bg-green01 mx-auto rounded-lg transition-all ease-linear duration-200 group">
-              <FaVideo
+              <CgProfile
                 className="text-black02 group-hover:text-white transition-all ease-linear duration-100"
                 size={22}
               />
-              <Link className="text-black02 group-hover:text-white transition-all ease-linear duration-100">
-                Videos
+              <Link
+                to="/profile"
+                className="text-black02 group-hover:text-white transition-all ease-linear duration-100"
+              >
+                Profile
               </Link>
             </div>
             <div className="flex items-center justify-start gap-x-6  w-[85%] py-4 px-5 hover:bg-green01 mx-auto rounded-lg transition-all ease-linear duration-200 group">
@@ -104,7 +114,10 @@ const BodyLeftLayout = () => {
                 className="text-black02 group-hover:text-white transition-all ease-linear duration-100"
                 size={22}
               />
-              <Link className="text-black02 group-hover:text-white transition-all ease-linear duration-100">
+              <Link
+                to="friend"
+                className="text-black02 group-hover:text-white transition-all ease-linear duration-100"
+              >
                 Friends
               </Link>
             </div>
@@ -115,6 +128,18 @@ const BodyLeftLayout = () => {
               />
               <Link className="text-black02 group-hover:text-white transition-all ease-linear duration-100">
                 Friends Request
+              </Link>
+            </div>
+            <div className="flex items-centerjustify-start gap-x-6  w-[85%] py-4 px-5 hover:bg-green01 mx-auto rounded-lg transition-all ease-linear duration-200 group">
+              <SlPeople
+                className="text-black02 group-hover:text-white transition-all ease-linear duration-100"
+                size={22}
+              />
+              <Link
+                to="/about"
+                className="text-black02 group-hover:text-white transition-all ease-linear duration-100"
+              >
+                About
               </Link>
             </div>
             <div className="flex items-center justify-start gap-x-6  w-[85%] py-4 px-5 hover:bg-green01 mx-auto rounded-lg transition-all ease-linear duration-200 group">

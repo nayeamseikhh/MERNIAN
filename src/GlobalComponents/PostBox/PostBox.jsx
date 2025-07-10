@@ -1,5 +1,5 @@
 import { Input } from "antd";
-import React from "react";
+import React, { useState } from "react";
 import {
   FaAlignCenter,
   FaCamera,
@@ -7,10 +7,20 @@ import {
   FaPhotoVideo,
 } from "react-icons/fa";
 import TextPost from "./PostType/TextPost";
-import ImgPost from "./PostType/ImgPost";
-import VideoPost from "./PostType/VideoPost";
+import { useDispatch, useSelector } from "react-redux";
+import { addPost } from "../../Service/Redux/Feature/viewSlice";
 
 const PostBox = () => {
+  const dispatch = useDispatch();
+  const { postList } = useSelector((state) => state.posts);
+  const [text, setText] = useState("");
+  const handlePost = () => {
+    if (text.trim()) {
+      dispatch(addPost(text));
+      setText("");
+    }
+  };
+
   return (
     <>
       {/* Upload post design */}
@@ -35,6 +45,7 @@ const PostBox = () => {
         <Input
           placeholder="Hi, MD: Nayeam Seikh, Share your post ..."
           variant="borderless"
+          onChange={(e) => setText(e.target.value)}
         />
       </div>
 
@@ -57,12 +68,13 @@ const PostBox = () => {
           <button
             className="font-poppins font-semibold text-sm text-white px-12 py-3.5 rounded-lg bg-purple01 hover:bg-black01
            transition-all ease-linear duration-200"
+            onClick={handlePost}
           >
             Post
           </button>
         </div>
       </div>
-      <TextPost />
+      <TextPost postList={postList} />
     </>
   );
 };

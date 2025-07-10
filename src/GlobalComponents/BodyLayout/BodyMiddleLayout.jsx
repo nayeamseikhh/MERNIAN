@@ -11,7 +11,7 @@ import Container from "./Container";
 const BodyMiddleLayout = () => {
   return (
     <>
-      <div className="bg-white02">
+      <div>
         <Container>
           <div className="relative  mx-auto bg-white mt-8 rounded-[10px]">
             <div className="relative h-[300px] w-full mx-auto mt-8 ">
