@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import BodyMiddleLayout from "../../GlobalComponents/BodyLayout/BodyMiddleLayout";
 import Container from "../../GlobalComponents/BodyLayout/Container";
 import { Input } from "antd";
 import FriendsCard from "./FriendsCard";
 import { friendsData } from "./friendsdata";
+import BodyMiddleLayout from "../../GlobalComponents/BodyLayout/MiddleLayout/BodyMiddleLayout";
+import { useState } from "react";
 
 const FriendsPage = () => {
   const [initalData, setInitialData] = useState(8);

@@ -59,3 +59,9 @@ input[type="text"]::-webkit-input-placeholder {
   font-size: 40px;
   font-weight: 800;
 }
+.anticon-down {
+  color: black !important;
+  font-size: 15px;
+  font-weight: 800 !important;
+  align-items: center !important;
+}

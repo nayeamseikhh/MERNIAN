@@ -1,6 +1,7 @@
-import BodyMiddleLayout from "../../GlobalComponents/BodyLayout/BodyMiddleLayout";
 import Container from "../../GlobalComponents/BodyLayout/Container";
+import BodyMiddleLayout from "../../GlobalComponents/BodyLayout/MiddleLayout/BodyMiddleLayout";
 import PostBox from "../../GlobalComponents/PostBox/PostBox";
+import VideoPost from "../../GlobalComponents/PostBox/PostType/VideoPost";
 import About from "../About";
 import Friends from "../Friends";
 import Videos from "../Videos";
@@ -18,6 +19,7 @@ const MiddleLayout = () => {
             </div>
             <div>
               <PostBox />
+              <VideoPost />
             </div>
             <div></div>
           </div>

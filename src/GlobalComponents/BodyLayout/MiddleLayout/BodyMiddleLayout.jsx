@@ -1,12 +1,10 @@
-import About from "../../Pages/About";
-import facebook from "../../assets/SocialIcons/facebook 1.png";
-import instagram from "../../assets/SocialIcons/insta 1.png";
-import twitter from "../../assets/SocialIcons/twitter 1.png";
-import youtube from "../../assets/SocialIcons/youtube 1.png";
-import bgImg from "../../assets/backgroundImage/bg-img.jpg";
-import bgImg01 from "../../assets/backgroundImage/bgimg02.jpg";
-import PostBox from "../PostBox/PostBox";
-import Container from "./Container";
+import facebook from "../../../assets/SocialIcons/facebook 1.png";
+import instagram from "../../../assets/SocialIcons/insta 1.png";
+import twitter from "../../../assets/SocialIcons/twitter 1.png";
+import youtube from "../../../assets/SocialIcons/youtube 1.png";
+import bgImg from "../../../assets/backgroundImage/bg-img.jpg";
+import bgImg01 from "../../../assets/backgroundImage/bgimg02.jpg";
+import Container from "../Container";
 
 const BodyMiddleLayout = () => {
   return (

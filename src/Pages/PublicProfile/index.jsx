@@ -1,12 +1,10 @@
-import React from "react";
 import Container from "../../GlobalComponents/BodyLayout/Container";
-import BodyMiddleLayout from "../../GlobalComponents/BodyLayout/BodyMiddleLayout";
 import About from "../About";
 import Friends from "../Friends";
 import Videos from "../Videos";
-import PostBox from "../../GlobalComponents/PostBox/PostBox";
 import TextPost from "../../GlobalComponents/PostBox/PostType/TextPost";
 import VideoPost from "../../GlobalComponents/PostBox/PostType/VideoPost";
+import BodyMiddleLayout from "../../GlobalComponents/BodyLayout/MiddleLayout/BodyMiddleLayout";
 
 const Profile = () => {
   return (

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { friendsData } from "./friendsdata";
 import { SlideshowLightbox } from "lightbox.js-react";
 

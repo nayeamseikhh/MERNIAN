@@ -9,6 +9,7 @@ import { Dropdown, Space } from "antd";
 import CommentsAndReply from "./CommentsAndReply";
 import { useDispatch } from "react-redux";
 import { deletePost } from "../../../Service/Redux/Feature/viewSlice";
+import VideoPost from "./VideoPost";
 
 const items = [
   {
@@ -204,6 +205,7 @@ const TextPost = ({ postList }) => {
         </div>
       </div>
       <CommentsAndReply like={like} love={love} wow={wow} />
+      {/* <VideoPost /> */}
 
       {/* post maping */}
       {postList?.map((post) => (

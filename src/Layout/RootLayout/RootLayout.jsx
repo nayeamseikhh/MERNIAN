@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
 import Header from "../../GlobalComponents/HeaderComponents";
-import BodyLeftLayout from "../../GlobalComponents/BodyLayout/BodyLeftLayout";
 import BodyRightLayout from "../../GlobalComponents/BodyLayout/BodyRightLayout";
+import BodyLeftLayout from "../../GlobalComponents/BodyLayout/BodyLeftLayout/BodyLeftLayout";
 
 const RootLayout = () => {
   return (

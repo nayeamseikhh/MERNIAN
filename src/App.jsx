@@ -9,6 +9,8 @@ import Home from "./Pages/Home";
 import Profile from "./Pages/PublicProfile";
 import AboutPage from "./Pages/About/AboutPage";
 import FriendsPage from "./Pages/Friends/FriendsPage";
+import Product from "./Pages/Product";
+import Store from "./Pages/Store";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -19,11 +21,8 @@ const App = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/friend" element={<FriendsPage />} />
-          {/* <Route path="/product" element={<Product />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/checkout" element={<Checkout />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/product" element={<Product />} />
+          <Route path="/store" element={<Store />} />
         </Route>
       </Route>
     )

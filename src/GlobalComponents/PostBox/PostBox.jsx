@@ -75,6 +75,7 @@ const PostBox = () => {
         </div>
       </div>
       <TextPost postList={postList} />
+      {/* <VideoPost /> */}
     </>
   );
 };

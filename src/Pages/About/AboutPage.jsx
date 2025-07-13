@@ -1,10 +1,8 @@
-import React from "react";
-import BodyMiddleLayout from "../../GlobalComponents/BodyLayout/BodyMiddleLayout";
 import Container from "../../GlobalComponents/BodyLayout/Container";
 import About from ".";
-import Friends from "../Friends";
 import ParsonalInfo from "./ParsonalInfo";
 import AboutMiddleContent from "./AboutMiddleContent";
+import BodyMiddleLayout from "../../GlobalComponents/BodyLayout/MiddleLayout/BodyMiddleLayout";
 
 const AboutPage = () => {
   return (
