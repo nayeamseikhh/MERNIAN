@@ -9,16 +9,16 @@ import {
 import TextPost from "./PostType/TextPost";
 import { useDispatch, useSelector } from "react-redux";
 import { addPost } from "../../Service/Redux/Feature/viewSlice";
+import { Link } from "react-router";
+import ProductCard from "../../Pages/Product/ProductCard";
 
 const PostBox = () => {
   const dispatch = useDispatch();
   const { postList } = useSelector((state) => state.posts);
   const [text, setText] = useState("");
   const handlePost = () => {
-    if (text.trim()) {
-      dispatch(addPost(text));
-      setText("");
-    }
+    dispatch(addPost(text));
+    setText("");
   };
 
   return (
@@ -32,12 +32,14 @@ const PostBox = () => {
               Status
             </h6>
           </div>
-          <div className="flex items-center rounded-tr-[10px] w-full gap-x-4 justify-center py-7 group hover:bg-purple01 transition-all ease-linear duration-100">
-            <FaLayerGroup className="text-white04 group-hover:text-white transition-all ease-linear duration-100" />
-            <h6 className="font-poppins font-normal text-[12px] text-white04 group-hover:text-white transition-all ease-linear duration-100">
-              Product Upload
-            </h6>
-          </div>
+          <Link to="/product_upload">
+            <div className="flex items-center rounded-tr-[10px] w-full gap-x-4 justify-center py-7 group hover:bg-purple01 transition-all ease-linear duration-100">
+              <FaLayerGroup className="text-white04 group-hover:text-white transition-all ease-linear duration-100" />
+              <h6 className="font-poppins font-normal text-[12px] text-white04 group-hover:text-white transition-all ease-linear duration-100">
+                Product Upload
+              </h6>
+            </div>
+          </Link>
         </div>
       </div>
 

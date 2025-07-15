@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../../GlobalComponents/BodyLayout/Container";
+import { useDispatch, useSelector } from "react-redux";
 
 const ProductCard = ({ name, image, categories, price }) => {
   return (

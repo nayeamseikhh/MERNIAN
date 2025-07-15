@@ -8,7 +8,6 @@ import { RiShareFill } from "react-icons/ri";
 import { Dropdown, Space } from "antd";
 import CommentsAndReply from "./CommentsAndReply";
 import { useDispatch } from "react-redux";
-import { deletePost } from "../../../Service/Redux/Feature/viewSlice";
 
 const items = [
   {
@@ -24,7 +23,7 @@ const items = [
     key: "0",
   },
   {
-    label: <a onClick={() => dispatch(deletePost(post.id))}>Delete Post</a>,
+    label: <a>Delete Post</a>,
     key: "1",
   },
 

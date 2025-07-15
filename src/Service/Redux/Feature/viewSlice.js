@@ -9,18 +9,12 @@ const postSlice = createSlice({
   initialState,
   reducers: {
     addPost: (state, action) => {
-      state.postList.unshift({
-        id: Date.now(),
+      state.postList.push({
         content: action.payload,
       });
-    },
-    deletePost: (state, action) => {
-      state.postList = state.postList.filter(
-        (post) => post.id !== action.payload
-      );
     },
   },
 });
 
-export const { addPost, deletePost } = postSlice.actions;
+export const { addPost } = postSlice.actions;
 export default postSlice.reducer;
