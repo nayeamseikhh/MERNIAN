@@ -25,10 +25,10 @@ const ProductCard = ({ name, image, categories, price }) => {
             </h6>
 
             <div className="mt-2.5 mb-4">
-              <p className="font-poppins text-sm font-light px-10 flex items-center gap-x-2">
+              <div className="font-poppins text-sm font-light px-10 flex items-center gap-x-2">
                 <div className="h-3 w-3 rounded-full bg-green01 " />
                 {categories}
-              </p>
+              </div>
             </div>
             <div className="mb-7">
               <p className="px-10 text-blue-500 text-[13px] font-light underline">

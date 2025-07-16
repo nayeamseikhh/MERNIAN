@@ -3,6 +3,7 @@ import MarketplaceMiddleLayout from "../../GlobalComponents/BodyLayout/MiddleLay
 import Container from "../../GlobalComponents/BodyLayout/Container";
 import ProductCard from "../Product/ProductCard";
 import { productData } from "../Product/productData";
+import { useDispatch, useSelector } from "react-redux";
 
 const Store = () => {
   return (
@@ -41,6 +42,12 @@ const Store = () => {
               </div>
             </div>
           </div>
+
+          {/* <div className="my-44 font-bold text-3xl">
+            {postList.map((data) => (
+              <h1>{data.postList}</h1>
+            ))}
+          </div> */}
         </Container>
       </div>
     </>

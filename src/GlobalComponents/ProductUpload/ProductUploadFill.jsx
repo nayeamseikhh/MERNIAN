@@ -48,11 +48,14 @@ const menuProps = {
   onClick: handleMenuClick,
 };
 
-const handlePost = () => {
-  console.log(handlePost);
-};
-
 const ProductUploadFill = () => {
+  const dispatch = useDispatch();
+  const [productDetail, setProductDetail] = useState("");
+  const handlePost = () => {
+    dispatch(addProduct(productDetail));
+    setProductDetail("");
+  };
+  console.log(setProductDetail);
   return (
     <>
       <div>

@@ -12,6 +12,9 @@ import FriendsPage from "./Pages/Friends/FriendsPage";
 import Product from "./Pages/Product";
 import Store from "./Pages/Store";
 import ProductUpload from "./GlobalComponents/ProductUpload";
+import Cart from "./Pages/Cart";
+import ProductDetails from "./Pages/ProductDetails";
+import Checkout from "./Pages/Checkout";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -26,6 +29,9 @@ const App = () => {
           <Route path="/product" element={<Product />} />
           <Route path="/store" element={<Store />} />
           <Route path="/product_upload" element={<ProductUpload />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/product_details" element={<ProductDetails />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Route>
       </Route>
     )

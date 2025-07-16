@@ -10,7 +10,6 @@ import TextPost from "./PostType/TextPost";
 import { useDispatch, useSelector } from "react-redux";
 import { addPost } from "../../Service/Redux/Feature/viewSlice";
 import { Link } from "react-router";
-import ProductCard from "../../Pages/Product/ProductCard";
 
 const PostBox = () => {
   const dispatch = useDispatch();
@@ -20,7 +19,7 @@ const PostBox = () => {
     dispatch(addPost(text));
     setText("");
   };
-
+  console.log(postList);
   return (
     <>
       {/* Upload post design */}
